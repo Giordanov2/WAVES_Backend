@@ -1,11 +1,3 @@
-"""
-
-Fingerprint Web Server - WSTG-INFO-02
-
-Determinar la version y tipo de servidor web
-que esta utilizando la aplicacion web para poder
-descubrir vulnerabilidades asociadas
-"""
 import os
 import re
 import ssl
@@ -24,10 +16,9 @@ hdrs = {'apiKey' : '%s' % NVD_apikey}
 pEdb = PyExploitDb()
 pEdb.debug = False
 pEdb.openFile()
-
 # Target Information
 
-ip = "  10.10.15.248"
+ip = "10.10.215.11"
 port = "80"
 target = "http://"+ip+":"+port
 

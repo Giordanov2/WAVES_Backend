@@ -2,9 +2,12 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from pyExploitDb import PyExploitDb
 
 def main():
+    #pEdb = PyExploitDb()
+    #pEdb.debug = False
+    #pEdb.openFile()
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'WAVES.settings')
     try:
